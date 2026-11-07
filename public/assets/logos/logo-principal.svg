@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C788"/>
+      <stop offset="25%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#F3E5BE"/>
+      <stop offset="75%" stop-color="#C09A4D"/>
+      <stop offset="100%" stop-color="#9E7A32"/>
+    </linearGradient>
+    <linearGradient id="goldRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAF1D9"/>
+      <stop offset="40%" stop-color="#D9B76E"/>
+      <stop offset="85%" stop-color="#AA8436"/>
+      <stop offset="100%" stop-color="#7A5C1F"/>
+    </linearGradient>
+    <linearGradient id="bgWine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4E0812"/>
+      <stop offset="50%" stop-color="#34050C"/>
+      <stop offset="100%" stop-color="#1F0206"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .serif-title {
+      font-family: 'Playfair Display', 'Cormorant Garamond', 'Baskerville', 'Georgia', serif;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+    .serif-sub {
+      font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+    }
+    .sans-sub {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+    }
+  </style>
+
+  <!-- Background Medallion Shape -->
+  <g transform="translate(300, 210)">
+    <!-- Outer delicate oval -->
+    <ellipse cx="0" cy="0" rx="275" ry="175" fill="none" stroke="url(#goldLinear)" stroke-width="2.5" stroke-opacity="0.9" />
+    
+    <!-- Thin dashed accent oval -->
+    <ellipse cx="0" cy="0" rx="265" ry="165" fill="none" stroke="url(#goldLinear)" stroke-width="1" stroke-dasharray="3, 4" stroke-opacity="0.5" />
+    
+    <!-- Inner solid oval frame -->
+    <ellipse cx="0" cy="0" rx="248" ry="148" fill="none" stroke="url(#goldLinear)" stroke-width="1.8" stroke-opacity="0.8" />
+
+    <!-- Corner/Axis Peppercorn Ornaments (Top, Bottom, Left, Right) -->
+    <!-- Top Ornament -->
+    <g transform="translate(0, -175)">
+      <circle cx="0" cy="0" r="4.5" fill="url(#goldRadial)" />
+      <circle cx="-16" cy="1" r="2.5" fill="url(#goldLinear)" opacity="0.8" />
+      <circle cx="16" cy="1" r="2.5" fill="url(#goldLinear)" opacity="0.8" />
+      <path d="M-30,2 Q-15,-2 0,0 Q15,-2 30,2" fill="none" stroke="url(#goldLinear)" stroke-width="1.2" />
+    </g>
+
+    <!-- Bottom Ornament -->
+    <g transform="translate(0, 175)">
+      <circle cx="0" cy="0" r="4.5" fill="url(#goldRadial)" />
+      <circle cx="-16" cy="-1" r="2.5" fill="url(#goldLinear)" opacity="0.8" />
+      <circle cx="16" cy="-1" r="2.5" fill="url(#goldLinear)" opacity="0.8" />
+      <path d="M-30,-2 Q-15,2 0,0 Q15,2 30,-2" fill="none" stroke="url(#goldLinear)" stroke-width="1.2" />
+    </g>
+
+    <!-- Left Ornament -->
+    <g transform="translate(-275, 0)">
+      <circle cx="0" cy="0" r="3.5" fill="url(#goldRadial)" />
+    </g>
+
+    <!-- Right Ornament -->
+    <g transform="translate(275, 0)">
+      <circle cx="0" cy="0" r="3.5" fill="url(#goldRadial)" />
+    </g>
+
+    <!-- Subtitle Arch / Header: RISTORANTE ITALIANO -->
+    <text y="-88" text-anchor="middle" fill="url(#goldLinear)" class="serif-sub" font-size="13">
+      RISTORANTE ITALIANO
+    </text>
+
+    <!-- Decorative upper rule with peppercorn seed center -->
+    <path d="M-110,-72 L-15,-72" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.6"/>
+    <polygon points="0,-75 3,-72 0,-69 -3,-72" fill="url(#goldLinear)"/>
+    <path d="M15,-72 L110,-72" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Main Wordmark: PEPE NERO -->
+    <text y="14" text-anchor="middle" fill="url(#goldLinear)" class="serif-title" font-size="58" filter="url(#softGlow)">
+      PEPE NERO
+    </text>
+
+    <!-- Decorative lower rule with botanical flourish -->
+    <path d="M-120,44 L-22,44" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- Peppercorn cluster insignia in the center -->
+    <g transform="translate(0, 44)">
+      <circle cx="0" cy="-2" r="3" fill="url(#goldRadial)" />
+      <circle cx="-8" cy="2" r="2.2" fill="url(#goldLinear)" />
+      <circle cx="8" cy="2" r="2.2" fill="url(#goldLinear)" />
+      <path d="M-16,0 C-10,-6 -4,0 0,-2 C4,0 10,-6 16,0" fill="none" stroke="url(#goldLinear)" stroke-width="1"/>
+    </g>
+    <path d="M22,44 L120,44" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Heritage Descriptor: DAL 2010 -->
+    <text y="74" text-anchor="middle" fill="#FAF1D9" class="serif-sub" font-size="12" opacity="0.95">
+      DAL 2010
+    </text>
+
+    <!-- City Descriptor: PLANALTINA • DF -->
+    <text y="104" text-anchor="middle" fill="url(#goldLinear)" class="sans-sub" font-size="10" opacity="0.75">
+      PLANALTINA • DF
+    </text>
+  </g>
+</svg>

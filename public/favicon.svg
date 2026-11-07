@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD2"/>
+      <stop offset="40%" stop-color="#DEB96A"/>
+      <stop offset="100%" stop-color="#936F26"/>
+    </linearGradient>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D060D"/>
+      <stop offset="100%" stop-color="#190205"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#favBg)"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#favGold)" stroke-width="1.5" />
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#favGold)" stroke-width="0.7" stroke-dasharray="2, 2" opacity="0.6"/>
+  <circle cx="32" cy="4" r="1.5" fill="url(#favGold)" />
+  <circle cx="32" cy="60" r="1.5" fill="url(#favGold)" />
+  <text x="24" y="38" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-style="italic" font-size="18" fill="url(#favGold)" text-anchor="middle">P</text>
+  <text x="39" y="40" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-style="italic" font-size="18" fill="url(#favGold)" text-anchor="middle">N</text>
+  <circle cx="32" cy="22" r="1.2" fill="url(#favGold)" />
+</svg>

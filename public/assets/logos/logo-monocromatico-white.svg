@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <style>
+    .mono-title-w {
+      font-family: 'Playfair Display', 'Cormorant Garamond', 'Baskerville', serif;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      fill: #FFFFFF;
+    }
+    .mono-sub-w {
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      fill: #FFFFFF;
+    }
+    .mono-sans-w {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      fill: #FFFFFF;
+    }
+  </style>
+
+  <g transform="translate(300, 210)">
+    <ellipse cx="0" cy="0" rx="275" ry="175" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <ellipse cx="0" cy="0" rx="265" ry="165" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3, 4" opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="248" ry="148" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+
+    <!-- Ornaments -->
+    <g transform="translate(0, -175)">
+      <circle cx="0" cy="0" r="4.5" fill="#FFFFFF" />
+      <circle cx="-16" cy="1" r="2.5" fill="#FFFFFF" />
+      <circle cx="16" cy="1" r="2.5" fill="#FFFFFF" />
+    </g>
+    <g transform="translate(0, 175)">
+      <circle cx="0" cy="0" r="4.5" fill="#FFFFFF" />
+      <circle cx="-16" cy="-1" r="2.5" fill="#FFFFFF" />
+      <circle cx="16" cy="-1" r="2.5" fill="#FFFFFF" />
+    </g>
+    <circle cx="-275" cy="0" r="3.5" fill="#FFFFFF" />
+    <circle cx="275" cy="0" r="3.5" fill="#FFFFFF" />
+
+    <text y="-88" text-anchor="middle" class="mono-sub-w" font-size="13">
+      RISTORANTE ITALIANO
+    </text>
+
+    <path d="M-110,-72 L-15,-72" stroke="#FFFFFF" stroke-width="1"/>
+    <polygon points="0,-75 3,-72 0,-69 -3,-72" fill="#FFFFFF"/>
+    <path d="M15,-72 L110,-72" stroke="#FFFFFF" stroke-width="1"/>
+
+    <text y="14" text-anchor="middle" class="mono-title-w" font-size="58">
+      PEPE NERO
+    </text>
+
+    <path d="M-120,44 L-22,44" stroke="#FFFFFF" stroke-width="1"/>
+    <g transform="translate(0, 44)">
+      <circle cx="0" cy="-2" r="3" fill="#FFFFFF" />
+      <circle cx="-8" cy="2" r="2.2" fill="#FFFFFF" />
+      <circle cx="8" cy="2" r="2.2" fill="#FFFFFF" />
+      <path d="M-16,0 C-10,-6 -4,0 0,-2 C4,0 10,-6 16,0" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    </g>
+    <path d="M22,44 L120,44" stroke="#FFFFFF" stroke-width="1"/>
+
+    <text y="74" text-anchor="middle" class="mono-sub-w" font-size="12">
+      DAL 2010
+    </text>
+
+    <text y="104" text-anchor="middle" class="mono-sans-w" font-size="10" opacity="0.8">
+      PLANALTINA • DF
+    </text>
+  </g>
+</svg>
