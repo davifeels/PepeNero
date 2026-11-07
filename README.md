@@ -2,6 +2,9 @@
 
 Demonstração digital e proposta de modernização da identidade visual para o **Pepe Nero Ristorante**, tradicional restaurante italiano fundado em 2010 no Centro Histórico de Planaltina-DF.
 
+🌐 **Acesse a demonstração online no GitHub Pages:**  
+👉 **[https://davifeels.github.io/PepeNero/](https://davifeels.github.io/PepeNero/)**
+
 ---
 
 ## 🏛️ Sobre o Projeto
