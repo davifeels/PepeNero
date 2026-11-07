@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DEB0"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="70%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9E7A32"/>
+    </linearGradient>
+    <linearGradient id="goldHCrest" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5DF"/>
+      <stop offset="60%" stop-color="#CFA755"/>
+      <stop offset="100%" stop-color="#805F1E"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .brand-title {
+      font-family: 'Playfair Display', 'Cormorant Garamond', 'Baskerville', 'Georgia', serif;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+    }
+    .brand-sub {
+      font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+    .brand-monogram {
+      font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-style: italic;
+    }
+  </style>
+
+  <!-- Left Monogram Medallion (Crest) -->
+  <g transform="translate(48, 45)">
+    <!-- Outer oval ring -->
+    <ellipse cx="0" cy="0" rx="38" ry="32" fill="none" stroke="url(#goldH)" stroke-width="1.8" />
+    <ellipse cx="0" cy="0" rx="34" ry="28" fill="none" stroke="url(#goldH)" stroke-width="0.8" stroke-dasharray="2, 2.5" opacity="0.6" />
+    
+    <!-- Botanical / peppercorn accent dots -->
+    <circle cx="0" cy="-32" r="2.2" fill="url(#goldH)" />
+    <circle cx="0" cy="32" r="2.2" fill="url(#goldH)" />
+    <circle cx="-38" cy="0" r="1.8" fill="url(#goldH)" />
+    <circle cx="38" cy="0" r="1.8" fill="url(#goldH)" />
+
+    <!-- Monogram PN -->
+    <text x="-7" y="9" text-anchor="middle" fill="url(#goldH)" class="brand-monogram" font-size="24">P</text>
+    <text x="7" y="11" text-anchor="middle" fill="url(#goldH)" class="brand-monogram" font-size="24">N</text>
+    
+    <!-- Small pepper seed divider -->
+    <circle cx="0" cy="-2" r="1.5" fill="url(#goldH)" opacity="0.8" />
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="104" y1="20" x2="104" y2="70" stroke="url(#goldH)" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Typographic Lockup -->
+  <g transform="translate(122, 0)">
+    <!-- Main Title -->
+    <text x="0" y="47" fill="url(#goldH)" class="brand-title" font-size="34">
+      PEPE NERO
+    </text>
+
+    <!-- Subtitle Line -->
+    <text x="2" y="68" fill="#FAF1D9" class="brand-sub" font-size="9.5" opacity="0.85">
+      RISTORANTE ITALIANO  •  DAL 2010
+    </text>
+  </g>
+</svg>

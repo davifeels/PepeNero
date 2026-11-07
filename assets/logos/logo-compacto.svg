@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldCompact" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD2"/>
+      <stop offset="30%" stop-color="#DEB96A"/>
+      <stop offset="70%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#936F26"/>
+    </linearGradient>
+    <path id="curveTop" d="M 40,120 A 80,80 0 0,1 200,120" />
+    <path id="curveBottom" d="M 200,120 A 80,80 0 0,1 40,120" />
+  </defs>
+
+  <style>
+    .comp-title {
+      font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', serif;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      font-size: 11px;
+      fill: url(#goldCompact);
+    }
+    .comp-date {
+      font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      font-size: 9.5px;
+      fill: #FAF1D9;
+      opacity: 0.9;
+    }
+    .comp-monogram {
+      font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+
+  <g transform="translate(120, 120)">
+    <!-- Outer gold circle frame -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="url(#goldCompact)" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="102" fill="none" stroke="url(#goldCompact)" stroke-width="0.8" stroke-dasharray="3, 3" opacity="0.6" />
+    
+    <!-- Inner medallion circle frame -->
+    <circle cx="0" cy="0" r="74" fill="none" stroke="url(#goldCompact)" stroke-width="1.4" opacity="0.8" />
+
+    <!-- 4 Cardinal Peppercorn Accents -->
+    <circle cx="0" cy="-110" r="3.5" fill="url(#goldCompact)" />
+    <circle cx="0" cy="110" r="3.5" fill="url(#goldCompact)" />
+    <circle cx="-110" cy="0" r="3.5" fill="url(#goldCompact)" />
+    <circle cx="110" cy="0" r="3.5" fill="url(#goldCompact)" />
+
+    <!-- Diagonal minor seeds -->
+    <circle cx="-78" cy="-78" r="2" fill="url(#goldCompact)" opacity="0.6" />
+    <circle cx="78" cy="-78" r="2" fill="url(#goldCompact)" opacity="0.6" />
+    <circle cx="-78" cy="78" r="2" fill="url(#goldCompact)" opacity="0.6" />
+    <circle cx="78" cy="78" r="2" fill="url(#goldCompact)" opacity="0.6" />
+
+    <!-- Center Monogram PN -->
+    <g transform="translate(0, 0)">
+      <text x="-16" y="22" text-anchor="middle" fill="url(#goldCompact)" class="comp-monogram" font-size="64">P</text>
+      <text x="16" y="24" text-anchor="middle" fill="url(#goldCompact)" class="comp-monogram" font-size="64">N</text>
+      <!-- Small botanical spice leaf accent -->
+      <path d="M-6,-28 C0,-36 0,-36 6,-28 C0,-26 0,-26 -6,-28 Z" fill="url(#goldCompact)" />
+      <circle cx="0" cy="-24" r="1.8" fill="url(#goldCompact)" />
+    </g>
+  </g>
+
+  <!-- Circular text along paths -->
+  <text class="comp-title">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">
+      PEPE NERO
+    </textPath>
+  </text>
+  <text class="comp-date">
+    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">
+      • DAL 2010 •
+    </textPath>
+  </text>
+</svg>
