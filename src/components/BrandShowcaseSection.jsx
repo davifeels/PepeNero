@@ -4,6 +4,7 @@ import {
   Copy, ExternalLink, ArrowRight, ShieldCheck 
 } from "lucide-react";
 import { brandColors, brandTypography, logoVariations, brandHistory } from "../data/brandData";
+import { getAssetUrl } from "../utils/assets";
 
 export default function BrandShowcaseSection({ onOpenFullGuide }) {
   const [selectedLogo, setSelectedLogo] = useState(logoVariations[0]);
@@ -66,7 +67,7 @@ export default function BrandShowcaseSection({ onOpenFullGuide }) {
 
               <div className="h-56 flex items-center justify-center p-4 bg-[#3E060F] rounded-xl overflow-hidden mb-4 border border-white/5">
                 <img
-                  src="/assets/original-logo.png"
+                  src={getAssetUrl("assets/original-logo.png")}
                   alt="Logo Original de Referência do Pepe Nero"
                   className="max-h-full max-w-full object-contain drop-shadow"
                 />
@@ -92,7 +93,7 @@ export default function BrandShowcaseSection({ onOpenFullGuide }) {
 
               <div className="h-56 flex items-center justify-center p-6 bg-[#26050C] rounded-xl overflow-hidden mb-4 border border-[#D8B25C]/30 shadow-inner">
                 <img
-                  src="/assets/logos/logo-principal.svg"
+                  src={getAssetUrl("assets/logos/logo-principal.svg")}
                   alt="Redesign do Logo Pepe Nero"
                   className="max-h-full max-w-full object-contain"
                 />

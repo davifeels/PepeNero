@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MessageCircle, Menu, X, Phone, Clock, MapPin, Sparkles, Compass } from "lucide-react";
+import { getAssetUrl } from "../utils/assets";
 
 export default function Navbar({ onOpenBrandGuide }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +60,7 @@ export default function Navbar({ onOpenBrandGuide }) {
           {/* Brand Logo Link */}
           <a href="#" className="flex items-center gap-3 group">
             <img
-              src="/assets/logos/logo-horizontal.svg"
+              src={getAssetUrl("assets/logos/logo-horizontal.svg")}
               alt="Pepe Nero Ristorante Italiano"
               className="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
@@ -127,7 +128,7 @@ export default function Navbar({ onOpenBrandGuide }) {
         <div className="fixed inset-0 z-50 lg:hidden bg-[#0E0C0D]/95 backdrop-blur-xl flex flex-col p-6 animate-fadeIn">
           <div className="flex items-center justify-between pb-6 border-b border-[#D8B25C]/20">
             <img
-              src="/assets/logos/logo-horizontal.svg"
+              src={getAssetUrl("assets/logos/logo-horizontal.svg")}
               alt="Pepe Nero"
               className="h-10 w-auto"
             />

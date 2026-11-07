@@ -1,3 +1,5 @@
+import { getAssetUrl } from "../utils/assets";
+
 // Brand Identity Tokens, History and Design System for Pepe Nero Ristorante
 
 export const brandHistory = {
@@ -108,7 +110,7 @@ export const logoVariations = [
     id: "principal",
     title: "Logo Principal (Medallion Emblem)",
     subtitle: "Aplicações institucionais de prestígio",
-    path: "/assets/logos/logo-principal.svg",
+    path: getAssetUrl("assets/logos/logo-principal.svg"),
     description: "Medalhão oval clássico em ouro envelhecido que preserva a herança geométrica original da marca, incorporando ornatos de grãos de pimenta (pepe), filigranas artesanais e a data de fundação (Dal 2010).",
     bgClass: "bg-[#2A050B]",
     tags: ["Fachada", "Capa de Cardápio", "Hero Website", "Uniformes"],
@@ -117,7 +119,7 @@ export const logoVariations = [
     id: "horizontal",
     title: "Logo Horizontal",
     subtitle: "Aplicações lineares e digitais",
-    path: "/assets/logos/logo-horizontal.svg",
+    path: getAssetUrl("assets/logos/logo-horizontal.svg"),
     description: "Versão compacta balanceada para barra de navegação, cabeçalho de documentos, papelaria comercial e assinaturas de e-mail.",
     bgClass: "bg-[#141113]",
     tags: ["Navbar Web", "Papel Timbrado", "Assinatura Digital", "Embalagens"],
@@ -126,7 +128,7 @@ export const logoVariations = [
     id: "compacto",
     title: "Versão Compacta / Monograma",
     subtitle: "Ícone e selo de garantia",
-    path: "/assets/logos/logo-compacto.svg",
+    path: getAssetUrl("assets/logos/logo-compacto.svg"),
     description: "Monograma estilizado 'PN' circundado pelo anel dourado com ramos de pimenta. Perfeito para fotos de perfil no Instagram, WhatsApp Business, lacres de cera e tampas de garrafas.",
     bgClass: "bg-[#33070E]",
     tags: ["Instagram Avatar", "WhatsApp", "Favicon", "Lacre de Cera"],
@@ -135,7 +137,7 @@ export const logoVariations = [
     id: "monocromatico-black",
     title: "Monocromático Positivo (Nero)",
     subtitle: "Impressões em preto e carimbos",
-    path: "/assets/logos/logo-monocromatico-black.svg",
+    path: getAssetUrl("assets/logos/logo-monocromatico-black.svg"),
     description: "Execução em cor única preta sobre fundos claros, ideal para impressões fiscais, notas, carimbos manuais e gravações a laser em madeira ou couro.",
     bgClass: "bg-[#FAF7F2]",
     darkText: true,
@@ -145,7 +147,7 @@ export const logoVariations = [
     id: "monocromatico-white",
     title: "Monocromático Negativo (Bianco)",
     subtitle: "Aplicações em fundo escuro ou fotográfico",
-    path: "/assets/logos/logo-monocromatico-white.svg",
+    path: getAssetUrl("assets/logos/logo-monocromatico-white.svg"),
     description: "Versão em branco puro com transparência vetorial para sobreposição sobre fotografias gastronômicas escuras e aplicações em contraste máximo.",
     bgClass: "bg-[#090809]",
     tags: ["Fotografia", "Vídeos", "Brindes", "Aventais"],

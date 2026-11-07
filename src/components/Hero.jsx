@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronDown, Utensils, MessageCircle, Sparkles, Award, MapPin } from "lucide-react";
+import { getAssetUrl } from "../utils/assets";
 
 export default function Hero({ onOpenBrandGuide }) {
   return (
@@ -33,7 +34,7 @@ export default function Hero({ onOpenBrandGuide }) {
         {/* Primary Redesigned Medallion Logo */}
         <div className="w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] mb-8 transition-transform duration-500 hover:scale-[1.02]">
           <img
-            src="/assets/logos/logo-principal.svg"
+            src={getAssetUrl("assets/logos/logo-principal.svg")}
             alt="Pepe Nero Ristorante Italiano"
             className="w-full h-auto drop-shadow-[0_15px_35px_rgba(0,0,0,0.8)]"
           />

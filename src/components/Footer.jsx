@@ -3,6 +3,7 @@ import {
   MapPin, Phone, Clock, MessageCircle, 
   ArrowUp, Sparkles, Heart 
 } from "lucide-react";
+import { getAssetUrl } from "../utils/assets";
 
 export default function Footer({ onOpenBrandGuide }) {
   const scrollToTop = () => {
@@ -22,7 +23,7 @@ export default function Footer({ onOpenBrandGuide }) {
           {/* Brand Info (5 cols) */}
           <div className="lg:col-span-5 space-y-5">
             <img
-              src="/assets/logos/logo-horizontal.svg"
+              src={getAssetUrl("assets/logos/logo-horizontal.svg")}
               alt="Pepe Nero Ristorante"
               className="h-12 w-auto"
             />
